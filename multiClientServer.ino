@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266mDNS.h>
 #define arraylength 4
-const char* Privatessid = "TestSoftAp";
-const char* Privatepassword = "htirosh6";
+const char* Privatessid = "TestSoftAp";//ssid for access point mode
+const char* Privatepassword = "wrong password";
 const char* hostName = "TestIgnoreMe";
 
 IPAddress local_IP(192, 168, 4, 1);
