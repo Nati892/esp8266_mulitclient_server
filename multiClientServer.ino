@@ -2,7 +2,7 @@
 #include <ESP8266mDNS.h>
 #define arraylength 4
 const char* Privatessid = "TestSoftAp";//ssid for access point mode
-const char* Privatepassword = "wrong password";
+const char* Privatepassword = "AP_password";
 const char* hostName = "TestIgnoreMe";
 
 IPAddress local_IP(192, 168, 4, 1);
@@ -15,8 +15,8 @@ int portNum = 80;
 WiFiServer server(portNum);
 WiFiClient clients[arraylength];
 bool clientFlags[arraylength] = {false, false, false, false};
-char Wifissid[33] = "G5";
-char WifiPassword[33] = "htirosh7";
+char Wifissid[33] = "home_ssid";
+char WifiPassword[33] = "home_pass";
 bool isNeedToBeWifi = true;
 
 void setup() {
