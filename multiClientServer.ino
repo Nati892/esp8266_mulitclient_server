@@ -29,7 +29,7 @@ void setup() {
 
     WiFi.hostname("Test_Ignore_me");
 
-  // make my own soft access point
+// Initially try and connect to local wifi
   tryConnectWifi();
 
   if (WiFi.status() != WL_CONNECTED)
@@ -82,7 +82,6 @@ void loop() {
 
   if (isThereAnyClient())
   {
-    static bool SentLonelyMessage;
 
     handleClients();
     checkClientConnection();
